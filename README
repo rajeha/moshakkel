@@ -1,0 +1,19 @@
+----------------------------------------------
+Moshakkel: Basic Arabic Diacritics Restoration
+Ahmad Rajeh 5/8/2017
+Project for Unix Tools, Dr. Kevin Scannell
+*Core algorithm based on Zayyan et al. 2016
+----------------------------------------------
+
+Comments:
+	Currently, the biggest problem with this software is that it's
+	slow. Probably due to multiple harddisk r/w operations and
+	repeatedly grepping multimillion-line files. 
+
+	The correctly-dicritzed words percentage reported by test.sh is
+	likely an underestimate. After manual inspection, I rarely find
+	undicritized/misdicritized words. In fact, some of the words 
+	that had no or partial dicritization were correctly dicritized!
+	But those cases will be considered mistakes by test.sh (which
+	is essentially diff) because they don't exactly match the original
+	dicritization. So the error rate is inflated.
