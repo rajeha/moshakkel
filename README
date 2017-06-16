@@ -17,3 +17,5 @@ Comments:
 	But those cases will be considered mistakes by test.sh (which
 	is essentially diff) because they don't exactly match the original
 	dicritization. So the error rate is inflated.
+	
+	Tested using the Tashkeela corpus as training data.
